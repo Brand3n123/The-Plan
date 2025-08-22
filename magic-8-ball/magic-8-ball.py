@@ -1,9 +1,15 @@
-name = "John"
-question = "Are you sentient?"
+name = input("Tell the Magic 8-Ball your name: ")
+question = input("Tel the Magic 8-Ball your question: ")
 answer = ""
 
+
+from colorama import init, Fore, Style
 import random
+init()
+
+
 random_number = random.randint(1, 9)
+
 
 
 if (random_number == 1):
@@ -31,7 +37,7 @@ if (question == ""):
   print ("You must not be inquizitive of the Magic 8-Ball's wonderful powers......please ask a question so that you may live")
 elif (name == ""):
   print ("Question:", question)
-  print("Magic 8-Ball's answer:", answer)
+  print(Fore.PURPLE + Style.BRIGHT + "Magic 8-Ball's answer: " + answer + Style.RESET_ALL)
 else:
   print(name, "asks:", question)
-  print("Magic 8-Ball's answer:", answer)
+  print(Fore.PURPLE + Style.BRIGHT + "Magic 8-Ball's answer: " + answer + Style.RESET_ALL)
