@@ -1,9 +1,8 @@
 ## `grade-calculator.py`
 
 # Grade Calculator
-```markdown
 Convert a numeric score into a letter grade.
-```
+
 
 ## Usage
 ```bash
