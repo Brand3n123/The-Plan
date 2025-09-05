@@ -1,25 +1,25 @@
-## `grade-calculator.py`
+## `grade-tracker.py`
 
-# Grade Calculator
-Convert a numeric score into a letter grade.
+# Grade Tracker
+Manage student roster and compute class statistics.
 
 ## Usage
 ```bash
-python grade-calculator.py
+python grade-tracker.py
 ```
 
 ## Notes
-Accepts integer input from the user.
+Starts with four students and their grades.
 
-Validates score is between 0–100.
+Adds and removes students, recalculates stats.
 
-Converts to A–F grades.
-
-Handles invalid input with try/except.
+Sorts students by grade and prints the top two.
 
 ## Skills Practiced
-Input validation and error handling.
+Parallel lists (names and grades).
 
-Conditional ranges with elif.
+List modification with .append() and .pop().
 
-User interaction in a simple CLI.
+Combining lists with zip and sorting with lambda.
+
+Working with nested lists.
