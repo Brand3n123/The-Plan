@@ -1,0 +1,4 @@
+*.bundle
+*.txt
+__pycache__/
+.DS_Store
