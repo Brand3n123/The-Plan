@@ -3,10 +3,11 @@
 ```markdown
 # Physics Class
 Compute forces and energy values for a list of objects.
+```
 
 ## Usage
+
 ```
-bash
 python "Physics-Class.py"
 Notes
 Uses a list-of-lists to store [name, mass, acceleration].
