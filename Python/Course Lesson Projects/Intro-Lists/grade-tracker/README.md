@@ -2,7 +2,7 @@
 ```markdown
 # Grade Calculator
 Convert a numeric score into a letter grade.
-```
+
 
 ## Usage
 ```bash
