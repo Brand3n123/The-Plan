@@ -20,8 +20,9 @@ summary.txt → totals parsed, skipped, allowed, blocked.
 top_domains.txt → Top 5 requested domains and Top 5 sources.
 
 Uses dictionaries to count occurrences, then sorts for the top N.
+```
 
-Skills Practiced
+## Skills Practiced
 File I/O (with open, reading line by line).
 
 String parsing and splitting.
