@@ -1,0 +1,27 @@
+## `Carly's Clippers.py`
+
+# Carly's Clippers
+Analyze haircut prices and revenue for a small salon.
+
+## Usage
+``` bash
+python "Carly's Clippers.py"
+```
+
+## Notes
+Stores hairstyles, prices, and last week’s sales.
+
+Computes average price and revenue.
+
+Applies a discount (new prices list).
+
+Finds cuts under $30.
+
+## Skills Practiced
+List comprehensions for filtering.
+
+Aggregating totals with loops.
+
+Index alignment across multiple lists.
+
+Basic business logic applied in Python.
