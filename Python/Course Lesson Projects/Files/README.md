@@ -1,11 +1,10 @@
-## `hackthefender.txt` (Python script)
+## `hackthefender.py`
 
 # Hack the Fender
 Simulated security exercise: extract usernames, leave a boss message, and overwrite passwords with ASCII art.
 
 ## Usage
 ```bash
-mv hackthefender.txt hackthefender.py
 python hackthefender.py
 ```
 ## Notes
