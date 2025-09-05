@@ -1,0 +1,5 @@
+Total : 17 log entries
+Parsed : 12 lines
+Skipped : 5 blank entries
+Allowed : 3 requests
+Blocked : 9 requests
