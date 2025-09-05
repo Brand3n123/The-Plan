@@ -5,7 +5,7 @@ Analyze haircut prices and revenue for a small salon.
 
 ## Usage
 ``` bash
-python Carly's Clippers.py
+python "Carly's Clippers.py"
 ```
 
 ## Notes
