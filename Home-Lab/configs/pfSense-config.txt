@@ -1,0 +1,16 @@
+Interfaces:
+WAN = vtnet0 -> bridged to USB/Ethernet -> home ISP
+LAN = vtnet1 -> bridged to host NIC -> Brocade p1 (VLAN20 untagged)
+
+
+Static Routes:
+192.168.30.0/24 -> 192.168.20.1 (Cisco Router)
+
+
+DHCP:
+VLAN20 only
+DNS handed out = 192.168.20.53 (Pi-hole)
+
+
+Services:
+Suricata IDS enabled (LAN + WAN)

@@ -1,0 +1,20 @@
+Interfaces:
+Gi0/0.20 -> 192.168.20.1/24 (VLAN20 SVI)
+Gi0/0.30 -> 192.168.30.1/24 (VLAN30 SVI, ACL applied)
+
+
+DHCP:
+Pool CLIENTS30
+Network: 192.168.30.0/24
+Default-router: 192.168.30.1
+DNS: 192.168.20.53, 1.1.1.1
+Excluded: .1-.49
+
+
+ACL VLAN30_OUT (inbound on Gi0/0.30):
+permit udp 192.168.30.0/24 host 192.168.20.53 eq 53
+permit tcp 192.168.30.0/24 host 192.168.20.53 eq 53
+deny udp 192.168.30.0/24 any eq 53
+deny tcp 192.168.30.0/24 any eq 53
+deny ip 192.168.30.0/24 192.168.20.0/24
+permit ip any any
