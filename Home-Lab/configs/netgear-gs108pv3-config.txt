@@ -1,0 +1,11 @@
+Netgear GS108v3 Managed Switch
+------------------------------
+
+Port 1: VLAN20 (U)  -> Unifi WAP
+Port 2: VLAN999 (U) -> Unused
+Port 3: VLAN999 (U) -> Unused
+Port 4: VLAN999 (U) -> Unused
+Port 5: VLAN30 (U)  -> Kali bare-metal
+Port 6: VLAN20 (U)  -> Pi-hole + Tailscale
+Port 7: VLAN999 (U) -> Unused
+Port 8: VLAN1 (U), VLAN20 (T), VLAN30 (T), VLAN999 -> Brocade p4 uplink
