@@ -11,10 +11,3 @@ Notes:
 Port 1 = pfSense host NIC (LAN vtnet1)
 Port 2 = Cisco Gi0/0 trunk (20,30)
 Port 4 = Netgear GS108v3 uplink (trunk 20,30)
-
-
-Netgear:
-Port 1 = VLAN20 (U) -> Unifi WAP
-Port 5 = VLAN30 (U) -> Kali (bare metal)
-Port 6 = VLAN20 (U) -> Pi-hole/Tailscale
-Port 8 = trunk (20,30) -> Brocade p4

@@ -40,6 +40,7 @@ Tracks milestones → repos → artifacts → resume tie-ins.
 - [ ] Intermediate Python
   - Repo path: https://github.com/<you>/python-lab/tree/main/Functions   # adjust when new folder/repo exists
   - Artifact: `python-utils` CLI (unit tested)
+  - Currently 45% Complete
 
 - [ ] **Advanced Python (6h)**
   - Repo: `flask-log-viewer`
