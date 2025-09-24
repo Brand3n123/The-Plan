@@ -79,22 +79,4 @@ class ServiceRegistry:
                         port_services[h.hostname].append(s.name)
                     else:
                         port_services[h.hostname] = [s.name]
-        print(f"The hosts:services running on {port} are {port_services}")
-
-
-
-
-
-service1 = Service("pfSense", "DHCP", 68)
-service2 = Service("Pi-Hole", "DNS", 53)
-host1 = Host("Lenovo", "Windows", None)
-host2 = Host("510s", "Kali", None)
-registry1 = ServiceRegistry()
-#registry1.add_host(host1)
-#registry1.add_host(host2)
-#registry1.add_service("510s", service1)
-#registry1.add_service("abcd", service2)
-registry1.list_services("510s")
-registry1.hosts_running("DNS")
-#print(registry1.hosts_list)
-registry1.services_on_port(68)
+        print(f"The hosts:services running on port {port} are {port_services}")
