@@ -1,5 +1,5 @@
 # Service Registry
-Basic DHCP-type host/service registry
+Basic DHCP-type host/service registry  
 Track hosts and the services running on them with basic OOP structures.
 
 ## Usage
