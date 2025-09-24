@@ -15,11 +15,13 @@ Service(name, svc_type, port)
 Host(hostname, os, services)  
 ServiceRegistry for managing hosts and queries    
 
-Duplicate protection:  
+Duplicate protection:
+
 Prevents duplicate hostnames  
 Prevents duplicate services (same type + port) on a host  
 
-Queries:  
+Queries:
+
 list_services(hostname) → services for a host  
 hosts_running(svc_type) → hosts with a given service type  
 services_on_port(port) → dict of hosts:services using a port  
@@ -31,12 +33,17 @@ Raises LookupError if adding a service to an unknown host
 registry = ServiceRegistry()
 registry.add_host(Host("Lenovo", "Windows"))
 registry.add_service("Lenovo", Service("pfSense", "DHCP", 68))
+registry.add_service("Lenovo, Service("Pi-Hole", "DNS" 53))
 registry.hosts_running("dhcp")
+registry.services_on_port(68)
+registry.services_on_port(53)
 ```
 ## Example Output
 ```bash
 Host Lenovo successfully added to the empty registry.
 Service added to host with no existing services.
+Services added to host.
 The following hosts are running dhcp: ['Lenovo']
 The hosts:services running on port 68 are {'Lenovo': ['pfSense']}
+The hosts:services running on port 53 are {'Lenovo': ['Pi-Hole']}
 ```
