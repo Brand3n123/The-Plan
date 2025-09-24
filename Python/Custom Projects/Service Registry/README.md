@@ -38,5 +38,5 @@ registry.hosts_running("dhcp")
 Host Lenovo successfully added to the empty registry.
 Service added to host with no existing services.
 The following hosts are running dhcp: ['Lenovo']
-The hosts:services running on 68 are {'Lenovo': ['pfSense']}
+The hosts:services running on port 68 are {'Lenovo': ['pfSense']}
 ```
