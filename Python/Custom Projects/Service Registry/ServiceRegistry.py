@@ -56,6 +56,7 @@ class ServiceRegistry:
         for h in self.hosts_list:
             if h.hostname.lower() == hostname.lower():
                 print(f"The services for {hostname} are: {h.services}.")
+                return h.services
 
     def hosts_running(self, svc_type):
         running_hosts = []
@@ -80,6 +81,7 @@ class ServiceRegistry:
                     else:
                         port_services[h.hostname] = [s.name]
         print(f"The hosts:services running on {port} are {port_services}")
+        return port_services
 
 
 
