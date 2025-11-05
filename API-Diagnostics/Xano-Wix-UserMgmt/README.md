@@ -7,11 +7,9 @@ This showcase documents a small backend built with **Xano** and consumed from a 
 - **RESTful CRUD** on users (GET/POST/PATCH/DELETE)
 - **Practical diagnostics** with **Postman** (status codes, headers, JSON bodies)
 
-> Relevance: mirrors the troubleshooting flow used in real-time support—verify auth, reproduce API calls, inspect response codes/payloads, and correlate app behavior with backend state.
-
 ---
 
-## Architecture (high level)
+## Architecture
 
 **Client (Wix/Velo JS)** → `fetch()` → **Xano REST Endpoints** → DB  
 - Client stores JWT after `/login` and includes it in headers for protected routes.
@@ -31,7 +29,7 @@ This showcase documents a small backend built with **Xano** and consumed from a 
 | DELETE | `/admin/users/{user_id}`   | Delete user (admin)                  |
 
 **Common status codes:**  
-`200 OK`, `201 Created`, `401 Unauthorized` (missing/invalid token), `403 Forbidden` (role not sufficient), `404 Not Found`, `422/400` (validation).
+`200 OK`, `401 Unauthorized` (missing/invalid token), `403 Forbidden` (role not sufficient), `404 Not Found`, `422/400` (validation).
 
 ---
 
@@ -54,7 +52,8 @@ Minimal, redacted examples live in `frontend-wix/`:
 
 See `client-tests/postman_notes.md` for transcribed requests and annotated screenshots:
 
-- **/me 500 (Invalid or Expired Token)** — Demonstrates handling of authentication errors and token validation issues.  
+- **/me 500 (Internal Server Error)** — Shows a combinations or initial faulty logic of API functinality and/or Javascript design to call the API.  
+- **/me 403 (Invalid or Expired Token)** — Demonstrates handling of authentication errors and token validation issues.  
 - **/me 200 (Valid Token)** — Confirms successful authorization using a valid Bearer token.  
 - **Admin PATCH /admin/users/{id} 200** — Verifies role-based access and successful update of user data.  
 
